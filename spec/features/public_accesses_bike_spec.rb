@@ -1,5 +1,3 @@
-require 'docking_station'
-
 feature 'member of public accesses bike'  do 
 	scenario 'docking station releases working bike' do
 		docking_station = DockingStation.new
