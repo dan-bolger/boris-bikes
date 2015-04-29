@@ -1,2 +1,4 @@
-describe Bike do 
+require 'bike'
+
+describe Bike do
 end
