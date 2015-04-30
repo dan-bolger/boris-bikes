@@ -2,11 +2,14 @@ require_relative 'bike'
 
 class DockingStation
   def release_bike
-    raise 'No bikes here!' unless @bike != nil
+    raise 'No bikes here!' unless @bike
     @bike
   end
 
   def dock bike
-    @bike = bike
-  end
+
+    #byebug
+    raise 'Docking station full' if @bike
+      @bike = bike
+    end
 end

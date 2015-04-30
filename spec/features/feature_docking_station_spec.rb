@@ -1,8 +1,8 @@
-describe 'Should be able to access docking station' do
+feature 'Should be able to access docking station' do
+
   scenario 'Get working bike from docking station' do
     docking_station = DockingStation.new
-    # dock a bike into docking station
-    docking_station.dock Bike.new
+      docking_station.dock Bike.new
     bike = docking_station.release_bike
     expect(bike).to be_working
   end
